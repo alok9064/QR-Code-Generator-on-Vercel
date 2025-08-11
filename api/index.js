@@ -3,6 +3,9 @@ import qr from 'qr-image';
 import { fileURLToPath } from 'url';
 import path from 'path';
 import bodyParser from 'body-parser';
+import { injectSpeedInsights } from '@vercel/speed-insights';
+
+injectSpeedInsights();
 
 const app = express();
 
